@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portada</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff6a00, #ee0979); /* Fondo en gradiente vibrante */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            animation: gradientAnimation 20s ease infinite; /* Fondo en movimiento */
+            background-size: 400% 400%;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Contenedor principal */
+        .container {
+            width: 90%;
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin: 20px 0;
+            overflow: hidden;
+            backdrop-filter: blur(10px); /* Efecto de desenfoque en el fondo */
+        }
+
+        /* Encabezado */
+        .header {
+            background: linear-gradient(135deg, #ff4d4d, #ff8b8b);
+            color: white;
+            padding: 20px;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+            text-shadow: 2px 2px 5px #c0392b;
+        }
+
+        /* Contenido */
+        .content {
+            padding: 20px;
+        }
+
+        .content img {
+            max-width: 200px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 50%;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .info {
+            font-size: 1.2em;
+            color: #2c3e50;
+            line-height: 1.8;
+        }
+
+        /* Pie de página */
+        .footer {
+            background: #f1f2f6;
+            padding: 15px;
+            border-radius: 0 0 20px 20px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+
+        .footer span {
+            color: #3498db;
+        }
+
+        /* Sección de enlaces */
+        .links {
+            width: 90%;
+            max-width: 900px;
+            margin-top: 20px;
+            padding: 20px;
+            background: #eef1f5;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .links h1 {
+            font-size: 1.8em;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+
+        .link-item {
+            margin: 15px 0;
+            font-size: 1.2em;
+        }
+
+        .link-item a {
+            color: #0073e6;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            padding: 10px 15px;
+            border-radius: 10px;
+            background: #ffffff;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .link-item a:hover {
+            color: white;
+            background: #0073e6;
+            text-decoration: none;
+            transform: scale(1.05);
+        }
+
+        .link-item img {
+            width: 20px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Unidad Educativa Municipal Técnica y en Ciencias</h1>
+            <h1>"San Francisco de Quito"</h1>
+        </div>
+        <div class="content">
+            <img src="Imagenes/sello-del-colegio-1.webp" alt="Escudo de la institución">
+            <div class="info">
+                <p><strong>Proyecto:</strong> Explorador de Archivos</p>
+                <p><strong>Nombres:</strong> Joe Portilla, Aldo Aguirre, Alejandra Cabezas</p>
+                <p><strong>Curso:</strong> 2do D</p>
+                <p><strong>Año Lectivo:</strong> 2024</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Realizado con dedicación para la comunidad educativa de <span>"San Francisco de Quito"</span></p>
+        </div>
+    </div>
+
+    <div class="links">
+        <h1>Secciones del Proyecto</h1>
+
+        <div class="link-item">
+            <a href="explorador.html" target="_blank">
+                <img src="https://img.icons8.com/windows/20/0073e6/opened-folder.png" alt="Icono de carpeta"> Explorador de archivos
+            </a>
+        </div>
+
+        <div class="link-item">
+            <a href="Funcionalidades del explorador de archivo.html" target="_blank">
+                <img src="https://img.icons8.com/windows/20/0073e6/features-list.png" alt="Icono de funcionalidades"> Funcionalidades del explorador
+            </a>
+        </div>
+
+        <div class="link-item">
+            <a href="Partes del explorador.html" target="_blank">
+                <img src="https://img.icons8.com/windows/20/0073e6/file-settings.png" alt="Icono de configuración"> Partes del explorador
+            </a>
+        </div>
+
+        <div class="link-item">
+            <a href="Atajos de Teclado Utiles.html" target="_blank">
+                <img src="https://img.icons8.com/windows/20/0073e6/keyboard.png" alt="Icono de teclado"> Atajos de teclado útiles
+            </a>
+        </div>
+
+        <div class="link-item">
+            <a href="https://www.adslzone.net/esenciales/windows/vista-previa-archivos-windows/" target="_blank">
+                <img src="https://img.icons8.com/windows/20/0073e6/book.png" alt="Icono de libro"> Bibliografía
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
